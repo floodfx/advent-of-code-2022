@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 	"strings"
 )
 
@@ -106,7 +106,7 @@ func part2(rounds []string) int {
 
 func main() {
 	// read in input.txt to string
-	b, err := ioutil.ReadFile("./day-2/input.txt")
+	b, err := os.ReadFile("./day-2/input.txt")
 	if err != nil {
 		panic(err)
 	}
